@@ -1,12 +1,19 @@
-from typing import List
-
-def plusOne(self, digits: list) -> List[int]:
-    return
+def plusOne(digits: list):
+    a = ''
+    for i in digits:
+        a += str(i)
+    a = str(int(a)+1)
+    return list(map(int,list(i for i in a)))
 
 def solution():
     inpt = list(map(int,input().split(' ')))
-    print(inpt)
+    x = plusOne(inpt)
+    print(x)
 
-    
+def test():
+    a = '123'
+    a = str(int(a)+1)
+    print(a)
 solution()
+# test()
     
