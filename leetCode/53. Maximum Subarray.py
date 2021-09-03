@@ -1,7 +1,8 @@
 def maxSubArray(nums: list) -> int:
     if len(nums) <= 1:
         return nums[0]
-    cur: int = 0
+    cur = 0
+    # print(((cur := max(num, cur + num)) for num in nums ))
     return max( (cur := max(num, cur + num)) for num in nums )
 
 
@@ -12,7 +13,8 @@ def solution():
     
 def test():
     a = [1,2,3,4]
-    print(sum(a))
+    print(list(x+1 for x in a))
+
     
 solution()
 # test()
