@@ -14,7 +14,6 @@ def romanToInt(s: str) -> int:
             ans += table[i]
             tmp = table[i]
     return ans
-
 def solution():
     if __name__ == '__main__':
         inpt = input()
